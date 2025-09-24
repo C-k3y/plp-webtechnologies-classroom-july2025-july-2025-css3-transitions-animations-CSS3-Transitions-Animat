@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 & JavaScript Animation Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🎬 Animation Playground</h1>
+        <p>Explore CSS3 animations and JavaScript interactions</p>
+    </header>
+
+    <main class="container">
+        <!-- Part 1: CSS3 Animations Section -->
+        <section class="section" id="css-animations">
+            <h2>🎨 CSS3 Transitions & Animations</h2>
+            
+            <div class="animation-grid">
+                <!-- Hover Effects -->
+                <div class="animation-card">
+                    <h3>Button Hover Effects</h3>
+                    <button class="btn btn-hover">Hover Me!</button>
+                    <button class="btn btn-glow">Glow Effect</button>
+                    <button class="btn btn-3d">3D Button</button>
+                </div>
+
+                <!-- Transform Animations -->
+                <div class="animation-card">
+                    <h3>Transform Effects</h3>
+                    <div class="transform-demo">
+                        <div class="box rotate">Rotate</div>
+                        <div class="box scale">Scale</div>
+                        <div class="box skew">Skew</div>
+                    </div>
+                </div>
+
+                <!-- Keyframe Animations -->
+                <div class="animation-card">
+                    <h3>Keyframe Animations</h3>
+                    <div class="keyframe-demo">
+                        <div class="ball bounce">Bounce</div>
+                        <div class="ball pulse">Pulse</div>
+                        <div class="ball shake">Shake</div>
+                    </div>
+                </div>
+
+                <!-- Continuous Animations -->
+                <div class="animation-card">
+                    <h3>Continuous Animations</h3>
+                    <div class="continuous-demo">
+                        <div class="spinner"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions Section -->
+        <section class="section" id="js-functions">
+            <h2>📚 JavaScript Functions</h2>
+            
+            <div class="function-grid">
+                <div class="function-card">
+                    <h3>Scope Demonstration</h3>
+                    <div class="scope-demo">
+                        <button id="scopeDemo" class="btn">Test Scope</button>
+                        <div id="scopeOutput" class="output"></div>
+                    </div>
+                </div>
+
+                <div class="function-card">
+                    <h3>Parameter & Return Values</h3>
+                    <div class="param-demo">
+                        <input type="number" id="numberInput" placeholder="Enter a number" min="1" max="100">
+                        <button id="calculate" class="btn">Calculate</button>
+                        <div id="calculationOutput" class="output"></div>
+                    </div>
+                </div>
+
+                <div class="function-card">
+                    <h3>Reusable Functions</h3>
+                    <div class="reusable-demo">
+                        <button id="randomColor" class="btn">Random Background</button>
+                        <button id="formatText" class="btn">Format Text</button>
+                        <div id="reusableOutput" class="output">Sample text to format</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined Animations Section -->
+        <section class="section" id="combined-animations">
+            <h2>🎨🎬 Combined CSS & JavaScript</h2>
+            
+            <div class="combined-grid">
+                <!-- Box Animation Control -->
+                <div class="combined-card">
+                    <h3>Controlled Box Animation</h3>
+                    <div class="control-panel">
+                        <button id="startAnimation" class="btn">Start Animation</button>
+                        <button id="stopAnimation" class="btn">Stop Animation</button>
+                        <button id="resetAnimation" class="btn">Reset</button>
+                    </div>
+                    <div id="animatedBox" class="animated-box"></div>
+                </div>
+
+                <!-- Card Flip -->
+                <div class="combined-card">
+                    <h3>Interactive Card Flip</h3>
+                    <div class="flip-container">
+                        <div id="flipCard" class="flip-card">
+                            <div class="flip-card-front">
+                                <h4>Front</h4>
+                                <p>Click to flip!</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>Back</h4>
+                                <p>Hello from the back!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="flipBtn" class="btn">Flip Card</button>
+                </div>
+
+                <!-- Loading Animation -->
+                <div class="combined-card">
+                    <h3>Loading Animation Control</h3>
+                    <div class="loading-controls">
+                        <button id="startLoading" class="btn">Start Loading</button>
+                        <button id="stopLoading" class="btn">Stop Loading</button>
+                    </div>
+                    <div id="loadingAnimation" class="loading-animation">
+                        <div class="loading-bar"></div>
+                    </div>
+                    <div id="loadingStatus" class="status">Ready</div>
+                </div>
+
+                <!-- Modal Popup -->
+                <div class="combined-card">
+                    <h3>Animated Modal Popup</h3>
+                    <button id="openModal" class="btn">Open Modal</button>
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3>Welcome to the Modal!</h3>
+                            <p>This modal slides in with animation.</p>
+                            <button id="closeModal" class="btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created with ❤️ using CSS3 & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
